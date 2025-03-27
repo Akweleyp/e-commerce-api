@@ -6,8 +6,8 @@ export const mailTransporter = createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: "patriciaakweleyn@gmail.com",
-    pass: "hmsh sccy ulav tffq",
+    user: process.env.USER_GMAIL,
+    pass: process.env.GMAIL_PASS_KEY,
   },
 });
 

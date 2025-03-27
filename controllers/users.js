@@ -34,7 +34,7 @@ export const registerUser = async (req, res, next) => {
 
 
   await mailTransporter.sendMail({
-    from: 'patriciaakweleyn@gmail.com',
+    from: process.env.USER_GMAIL,
     to: value.email,
     subject:'Checking  out nodemiler ',
     // text: ` Dear ${value.username}, \nA  new account has been created for you! \nThank you!`
